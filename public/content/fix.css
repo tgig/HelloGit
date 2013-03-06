@@ -1,0 +1,98 @@
+
+/* Custom container */
+.container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.container-narrow-trans {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0px 50px 0px 50px;
+
+    background: url('img/white-transparent-bg.png') repeat scroll 0 0 transparent;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    margin: 30px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px #194da0;
+    filter: dropshadow(color=#194da0, offx=1, offy=1);
+}
+
+.jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 60px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+.black{
+    background-color: #111;
+    color:#ffffff;
+}
+
+.green{
+    background-color: #445D0C;
+    color:#fff;
+}
+.green a{
+    color:#000;
+    font-weight: bold;
+}
+.whitebg{
+    background-color: #ffffff;
+    color:#333;
+}
+.darkbluebg{
+    background-color: #2d6fd8;
+    color:#fff;
+}
+.center{
+    text-align: center;
+}
+
+.mainbg{
+    background: url('img/bottom-bg.jpg') no-repeat;
+
+}
+.swingbg{
+    background: url('img/r-m-swing-back.jpg') no-repeat;
+    background-position: center 106px;
+}
+.spacing20{
+    padding:20px 0;
+}.spacing40{
+    padding:40px 0;
+}
+.bigSpacer{
+    height:276px;
+}
+
+body{
+    background-color: #4f86e0;
+}
+
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+    width: 740px;
+}
+
+.span6 {
+    width: 360px;
+}
