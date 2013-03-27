@@ -1,33 +1,29 @@
-/*
-//NO MORE HELLO WORLD
 
+//include express
 var express = require('express');
+//var app = express();
+var app = express.createServer();
 
-var app = express.createServer(express.logger());
+var campfire = require("ranger").createClient("swingbyswinggolf", "f3b9861fed6dcc149d3ab09f1356633bfebf3e43");
 
-app.get('/', function(request, response) {
-  response.send('Hello World!!!!!');
-});
+//parse request params
+app.use(express.bodyParser());
 
-var port = process.env.PORT || 5000;
+//static documents in the /public folder
+app.use('/', express.static(__dirname + "/public",{maxAge:86400000}));
+
+
+//listen on port 3000 for localhost or whatever for heroku deploy
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
-*/
 
-var static = require('node-static');
+//------------------------------------------------------------------
 
-//
-// Create a node-static server instance to serve the './public' folder
-//
-var file = new(static.Server)('./public');
-var port = process.env.PORT || 3000;
+app.post('/speak', function (req, res) {
 
-require('http').createServer(function (request, response) {
-  request.addListener('end', function () {
-    //
-    // Serve files!
-    //
-    file.serve(request, response);
-  });
-}).listen(port);
+	campfire.room(524476, function (room) { room.speak(req.body.saythis); console.log("Just said: " + req.body.saythis); });
+	res.send("Success");
+
+});
