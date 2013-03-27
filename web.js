@@ -4,7 +4,7 @@ var express = require('express');
 //var app = express();
 var app = express.createServer();
 
-var campfire = require("ranger").createClient("swingbyswinggolf", "f3b9861fed6dcc149d3ab09f1356633bfebf3e43");
+//var campfire = require("ranger").createClient("swingbyswinggolf", "f3b9861fed6dcc149d3ab09f1356633bfebf3e43");
 
 //parse request params
 app.use(express.bodyParser());
@@ -21,9 +21,12 @@ app.listen(port, function() {
 
 //------------------------------------------------------------------
 
+/*
 app.post('/speak', function (req, res) {
 
 	campfire.room(524476, function (room) { room.speak(req.body.saythis); console.log("Just said: " + req.body.saythis); });
 	res.send("Success");
 
 });
+*/
+
