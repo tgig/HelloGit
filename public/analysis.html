@@ -9,16 +9,14 @@
 <html class="no-js">
 <!--<![endif]-->
 <head id="head1">
-    <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Guaranteed Golf System</title>
+    <title>Your own personal golf coach</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="content/bootstrap/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="content/BuildingBlocks.css" type="text/css" />
     <link rel="stylesheet" href="content/fix.css" type="text/css" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="scripts/bootstrap-tab.js" type="text/javascript"></script>
 
     <script type="text/javascript">
 
@@ -41,6 +39,8 @@
 
             var player = getParameterByName("player");
             var yt = getParameterByName("yt");
+
+            $(".btn-buy").attr("href", "https://www.swingbyswing.com/checkout/pay/?promo=PRODUCTHERE")
 
 
             if (player != "")
@@ -67,41 +67,598 @@
             return decodeURIComponent(results[1].replace(/\+/g, " "));
         }
 
+
     </script>
 </head>
 <body>
+<div class="page-container" id="page-container" style="min-height:700px; height:auto !important; height:700px;">
 
-    
-    <div class="page-container" id="page-container" style="min-height:700px; height:auto !important; height:700px;">
+    <div class="container">
+        <a href="http://www.swingbyswing.com/" class="brand">
+            <img src="content/bootstrap/logo.png">
+        </a>
+    </div>
+
+    <div class="mainbg">
         <div class="container">
-            <a href="http://www.swingbyswing.com/" class="brand">
-                <img src="content/bootstrap/logo.png">
-            </a>
+            <div class="jumbotron">
+                <h1 class="white" id="headline">Game Analysis</h1>
+
+                <iframe width="853" height="480" src="" frameborder="0" allowfullscreen style="position: relative; left: -50px;" id="ytFrame"></iframe>
+
+            </div>
         </div>
+    </div>
 
-        <div class="mainbg">
-            <div class="container">
-                <div class="jumbotron">
-                    <h1 class="white" id="headline">Scorecard Analysis</h1>
 
-                    <iframe width="853" height="480" src="" frameborder="0" allowfullscreen style="position: relative; left: -50px;" id="ytFrame"></iframe>
+    <div class="gridbg spacing40">
+        <div class="container">
+            <div class="row">
+                <h1 style="font-size: 56px; margin-bottom: 50px;">What you get:</h1>
 
-                    <a class="btn btn-large btn-success" href="https://www.swingbyswing.com/checkout/pay/?promo=GuaranteedGolf|ProLooper|99|14">Sign up today</a>
+                <ul style="font-size: 40px;">
+                    <li style="line-height: 60px;">Unlimited analysis of your game</li>
+                    <li style="line-height: 60px;">Unlimited custom video instruction</li>
+                    <li style="line-height: 60px;">Golf Drills created just for you</li>
+                </ul>
 
-                </div>
+                <h3 class="font-twofifty red">FREE for 14-days then just $10/month</h3>
+                <br>
+                <a class="btn btn-large btn-success btn-buy">Try it FREE Today</a>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="background-almostwhite border-top-gray-dashed">
+        <div class="container">
+            <div class="row pad-top40 pad-bottom40">
+
+                <img src="content/img/brad-smith.png" alt="Brad Smith, PGA, Director of Instruction" align="right" style="padding-left: 20px;" />
+                <h3>Introducing:</h3>
+                <h1>Brad Smith, PGA</h1>
+                <h2>Director of Instruction</h2>
+                <p class="lead">This is Brad Smith, the man, the myth.</p>
+
+                <ul style="font-size: 24px;">
+                    <li style="line-height: 50px;">25-year PGA Pro</li>
+                    <li style="line-height: 50px;">Has taught more than 50,000 students</li>
+                    <li style="line-height: 50px;">Has analyzed more than 100,000 golf swings</li>
+                    <li style="line-height: 50px;">Pro Looper students last year dropped an average of 8 strokes</li>
+                </ul>
+
             </div>
 
-                
-                
-
-        </div>
-
-    </div>
-    <div class="black">
-        <div class="container">
-            <h5>&copy; Swing by Swing 2013</h5>
         </div>
     </div>
+
+
+<div class="gridbg spacing40  border-top-gray-dashed">
+    <div class="container spacing20">
+        <div class="row">
+            <h2 class="font-threehundred">
+                Success Stories
+            </h2>
+            <h3>
+                Swing Pictures
+            </h3>
+        </div>
+        <div class="row">
+            <div class="tabbable">
+                <ul class="nav nav-tabs" style="margin: 0; pad: 0;">
+                    <li class="active">
+                        <a href="#swing1" data-toggle="tab">Jesse lost 6 strokes</a>
+                    </li>
+                    <li>
+                        <a href="#swing2" data-toggle="tab">Nick looks like a Pro</a>
+                    </li>
+                    <li>
+                        <a href="#swing3" data-toggle="tab">Mohammed dropped 7</a>
+                    </li>
+                    <li>
+                        <a href="#swing4" data-toggle="tab">Maddie creates power</a>
+                    </li>
+                </ul>
+                <div class="tab-content background-almostwhite">
+                    <div id="swing1" class="tab-pane active">
+                        <p style="width: 70%;" class="box-center pad-bottom10">
+                            <i>"Brad's easy to follow drills have fixed several key errors in my golf swing.  I have a much more athletic swing now, and my scores are reflecting that after each lesson."</i> - Jesse Lombardo
+                        </p>
+                        <div class="text-center">
+                            <img src="/content/img/swing-vid-before-after-1.jpg" />
+                        </div>
+
+                    </div>
+                    <div id="swing2" class="tab-pane">
+                        <p style="width: 70%;" class="box-center pad-bottom10">
+                            <i>"I never realized how bad of a set up I had until I started working with Brad.  His personalized drills on posture and swing mechanics have completely changed my game."</i> - Nick LaPointe
+                        </p>
+                        <div class="text-center"><img src="/content/img/swing-vid-before-after-2.jpg" /></div>
+                    </div>
+                    <div id="swing3" class="tab-pane">
+                        <p style="width: 70%;" class="box-center pad-bottom10">
+                            Mohammed no longer overswings. He dropped 7 strokes with a more repeatable swing.
+                        </p>
+                        <div class="text-center"><img src="/content/img/swing-vid-before-after-3.jpg" /></div>
+                    </div>
+                    <div id="swing4" class="tab-pane">
+                        <p style="width: 70%;" class="box-center pad-bottom10">
+                            Maddie is 16, and now generates massive power in her swing. Watch out world!
+                            <br>
+                            <br>
+                            <i>"Just a few lessons with Brad provided me with quieter hip rotation. It's allowed me to keep my head balanced and eyes better focused on the ball during impact."</i> - Maddie S.
+                        </p>
+                        <div class="text-center"><img src="/content/img/swing-vid-before-after-4.jpg" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="whitebg spacing20 border-top-gray-dashed">
+    <div class="container">
+        <h3 class="row">
+            Customer Testimonials &amp; Scorecard Improvements
+        </h3>
+
+        <div class="row">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#improvetestimonial" data-toggle="tab">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#improvescorecard" data-toggle="tab">Scorecard Improvements</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="improvetestimonial" class="tab-pane active">
+                        <p class="lead">
+                            Just a few of the testimonials we've gotten recently:
+                        </p>
+                        <div class="span6">
+                            <p>
+                                "I wanted to say thanks for the analysis, drills and tips you've given me. My iron play has improved dramatically. Not only have I gained 5-10 yards with each club, I'm hitting more greens in regulation now than ever before, and overall just feel so much more comfortable hitting any of my irons. So thanks!" - <b>Mike Kluft</b>
+                            </p>
+                            <hr>
+                            <p>
+                                "On Saturday morning I broke 90 for the first time! Thank you so much for your continued coaching and encouragement. I have quite a bit of work left to do on the last drills you sent me." - <b>jeremyj...@g....com</b>
+                            </p>
+                            <hr>
+                            <p>
+                                "Brad, can't tell you how much you've helped my balance and direction. I'm shooting in low 80s lately by working on tempo. Your drills have helped tremendously. Some golfing friends have been noticing that they too have weight transfer problems. " - <b>rondep....@g....com</b>
+                            </p>
+                            <hr>
+                            <p>
+                                "I need to thank you for the first two lessons, I have seen tremendous improvement in my game, About 4 strokes off my game so far." - <b>Kevin Harris</b>
+                            </p>
+                            <hr>
+                            <p>
+                                "I just want to say, your advice on my swing I sent in was awesome!! It helped me have a straighter ball flight. Love the pro looper."
+                            </p>
+                        </div>
+                        <div class="span6">
+                            <p>
+                                "Brad, I want to brag on you. On Saturday, I had 3 kickin birdies on the back nine. My husband was very impressed. I'm hitting the ball longer and straighter. This system is really working for me. I've had lessons before from pros but not with this success. I'm a big believer in Swing by Swing. Thanks for being there." - <b>Kathy</b>
+                            </p>
+                            <hr>
+                            <p>
+                                "Last game I played I finally got in contention with the guys I play with and they were blown away P.S. I'm gonna try and send you some videos this week thanks a lot for all your help and patience lol" - <b>James Griffith</b>
+                            </p>
+                            <hr>
+                            <p>
+                                "I would like to thank you and Brad for helping me shoot my second lowest score since High school. Brad's simple advice to my swing paid off with great dividends today. With a quite lower body I was able to hit my drives straight with a slight draw. My bad shots today were when I reverted back to my old swing habits. I will continue with the lessons Brad gave me to work on and send in another video. If you would pass this onto Brad, along with my thanks. Today was a very enjoyable round of Golf! PS: I dropped 13 strokes from the last two times I golfed." - <b>dirconstruct...@h...com</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="improvescorecard" class="tab-pane">
+                        <p class="lead">
+                            These Pro Loopers took an average of 8 strokes off their scorecard
+                        </p>
+                        <table class="table">
+                        <tr>
+                            <th>
+                                Nickname
+                            </th>
+                            <th>
+                                Score Before
+                            </th>
+                            <th>
+                                Score After
+                            </th>
+                            <th>
+                                Dropped Strokes
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                tashkandi
+                            </td>
+                            <td class="red">
+                                105
+                            </td>
+                            <td class="bold green">
+                                98
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 7
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                djlarente
+                            </td>
+                            <td class="red">
+                                101
+                            </td>
+                            <td class="bold green">
+                                90
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 11
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                teimour007
+                            </td>
+                            <td class="red">
+                                94
+                            </td>
+                            <td class="bold green">
+                                81
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 13
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                sdhubble7
+                            </td>
+                            <td class="red">
+                                101
+                            </td>
+                            <td class="bold green">
+                                96
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                justusbecks
+                            </td>
+                            <td class="red">
+                                81
+                            </td>
+                            <td class="bold green">
+                                77
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 4
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                shushu100
+                            </td>
+                            <td class="red">
+                                93
+                            </td>
+                            <td class="bold green">
+                                88
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                sly84
+                            </td>
+                            <td class="red">
+                                85
+                            </td>
+                            <td class="bold green">
+                                80
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                armstrong.mark
+                            </td>
+                            <td class="red">
+                                96
+                            </td>
+                            <td class="bold green">
+                                90
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                mikedahood12
+                            </td>
+                            <td class="red">
+                                100
+                            </td>
+                            <td class="bold green">
+                                91
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 9
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                rexroat22
+                            </td>
+                            <td class="red">
+                                96
+                            </td>
+                            <td class="bold green">
+                                86
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 10
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                two60stangs
+                            </td>
+                            <td class="red">
+                                127
+                            </td>
+                            <td class="bold green">
+                                118
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 9
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                okeefes1.so
+                            </td>
+                            <td class="red">
+                                110
+                            </td>
+                            <td class="bold green">
+                                98
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 12
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ruhlmann
+                            </td>
+                            <td class="red">
+                                103
+                            </td>
+                            <td class="bold green">
+                                97
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                fedpilot
+                            </td>
+                            <td class="red">
+                                111
+                            </td>
+                            <td class="bold green">
+                                89
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 22
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                jimkim17
+                            </td>
+                            <td class="red">
+                                96
+                            </td>
+                            <td class="bold green">
+                                91
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                greg
+                            </td>
+                            <td class="red">
+                                93
+                            </td>
+                            <td class="bold green">
+                                84
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 9
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                lfsjstansbury
+                            </td>
+                            <td class="red">
+                                85
+                            </td>
+                            <td class="bold green">
+                                80
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                jbgloss
+                            </td>
+                            <td class="red">
+                                85
+                            </td>
+                            <td class="bold green">
+                                79
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                crmorgan10
+                            </td>
+                            <td class="red">
+                                101
+                            </td>
+                            <td class="bold green">
+                                93
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 8
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                harrismd1
+                            </td>
+                            <td class="red">
+                                97
+                            </td>
+                            <td class="bold green">
+                                87
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 10
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                bobbeaty12
+                            </td>
+                            <td class="red">
+                                84
+                            </td>
+                            <td class="bold green">
+                                80
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 4
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                cisneros.jose
+                            </td>
+                            <td class="red">
+                                86
+                            </td>
+                            <td class="bold green">
+                                80
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                alirving1
+                            </td>
+                            <td class="red">
+                                106
+                            </td>
+                            <td class="bold green">
+                                98
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 8
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                klbgolf
+                            </td>
+                            <td class="red">
+                                103
+                            </td>
+                            <td class="bold green">
+                                94
+                            </td>
+                            <td class="bold font-oneeighty">
+                                - 9
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container spacing20">
+    <div class="row text-center">
+        <h2>
+            Swing by Swing in the Press
+        </h2>
+    </div>
+    <div class="row text-center ">
+        <img src="content/img/golf-mag-oct2012-cover.png" alt="Golf Magazine - Oct 2012 cover"><br>
+        <img alt="" src="content/img/pro-sale-logos.png"><br>
+        <img alt="" src="content/img/pro-sale-logos2.png">
+    </div>
+</div>
+
+<div class="background-almostwhite pad-top40 pad-bottom40">
+    <div class="container">
+        <div class="row">
+            <h1 class="font-threehundred">Guarantee</h1>
+            <p class="lead">
+                With Swing by Swing you'll never overpay for a lesson again! Our mission is to put the fun back into your game by helping you play your best game. What do you have to lose? Nothing! That's right- if you're disatisified we'll cancel your memebership and send you a refund. 
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="gridbg pad-top40 pad-bottom40 border-top-gray-dashed">
+    <div class="container">
+        <div class="row">
+            <h2 class="font-threehundred">How it works</h2>
+
+            <iframe width="853" height="480" src="http://www.youtube.com/embed/GzyPSOdGxdA?rel=0" frameborder="0" allowfullscreen></iframe>        
+
+            <h3 class="font-twofifty red">FREE for 14-days then just $10/month</h3>
+            <br>
+            <a class="btn btn-large btn-success btn-buy">Try it FREE Today</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="black">
+    <div class="container">
+        <h5>&copy; Swing by Swing 2013</h5>
+    </div>
+</div>
 
 <script src="//cdn.optimizely.com/js/123089036.js"></script>
 

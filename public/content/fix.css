@@ -73,6 +73,10 @@
     background: url('img/r-m-swing-back.jpg') no-repeat;
     background-position: center 106px;
 }
+.gridbg {
+    background: url('img/pro-test-bg.jpg') repeat;
+}
+
 .spacing20{
     padding:20px 0;
 }.spacing40{
