@@ -66,7 +66,7 @@
 }
 
 .mainbg{
-    background: url('img/bottom-bg.jpg') no-repeat;
+    background: url('img/bottom-bg.jpg') bottom no-repeat;
 
 }
 .swingbg{
