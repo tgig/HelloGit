@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Data Entry</title>
+    <meta name="viewport" content="width=device-width"/>
+    
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <style>
+        .scorebutton, .drivebutton {
+            height: 65px; 
+            line-height: 65px;
+        }
+        .puttsbutton, .penaltybutton, .bunkerbutton {
+            height: 35px; 
+            line-height: 35px;
+        }
+        .btn.active {
+            background-color: #b2f34e;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row-fluid">
+            <div class="span2" style="margin: 10px 0 10px 0;">
+                <div style="font-size: 4em; line-height: 1em;">Score:</div>
+            </div>
+            <div class="span10">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a class="btn scorebutton" href="#"><img src="/content/img/minus.gif" height="30" width="30" /></a>
+                    <a class="btn scorebutton" href="#"><img src="/content/img/birdie-3.gif" /></a>
+                    <a class="btn scorebutton" href="#"><img src="/content/img/par-4.gif" /></a>
+                    <a class="btn scorebutton active" href="#"><img src="/content/img/bogey-5.gif" /></a>
+                    <a class="btn scorebutton" href="#"><img src="/content/img/double-6.gif" /></a>
+                    <a class="btn scorebutton" href="#"><img src="/content/img/plus.gif" height="30" width="30" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span2" style="margin: 10px 0 10px 0;">
+                <div style="font-size: 3em; line-height: 1em;">Putts:</div>
+            </div>
+            <div class="span10">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a class="btn puttsbutton" href="#"><img src="/content/img/putts-0.gif" /></a>
+                    <a class="btn puttsbutton" href="#"><img src="/content/img/putts-1.gif" /></a>
+                    <a class="btn puttsbutton active" href="#"><img src="/content/img/putts-2.gif" /></a>
+                    <a class="btn puttsbutton" href="#"><img src="/content/img/putts-3.gif" /></a>
+                    <a class="btn puttsbutton" href="#"><img src="/content/img/plus.gif" height="30" width="30" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span2" style="margin: 10px 0 10px 0;">
+                <div style="font-size: 1.5em; line-height: 1em;">Penalty Strokes:</div>
+            </div>
+            <div class="span10">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a class="btn penaltybutton active" href="#"><img src="/content/img/putts-0.gif" /></a>
+                    <a class="btn penaltybutton" href="#"><img src="/content/img/putts-1.gif" /></a>
+                    <a class="btn penaltybutton" href="#"><img src="/content/img/putts-2.gif" /></a>
+                    <a class="btn penaltybutton" href="#"><img src="/content/img/plus.gif" height="30" width="30" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span2" style="margin: 10px 0 10px 0;">
+                <div style="font-size: 1.5em; line-height: 1em;">Drive Direction:</div>
+            </div>
+            <div class="span10">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a class="btn drivebutton" href="#"><img src="/content/img/direction-left.gif" /></a>
+                    <a class="btn drivebutton active" href="#"><img src="/content/img/direction-straight.gif" /></a>
+                    <a class="btn drivebutton" href="#"><img src="/content/img/direction-right.gif" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span2" style="margin: 10px 0 10px 0;">
+                <div style="font-size: 1.5em; line-height: 1em;">Bunker Hit?</div>
+            </div>
+            <div class="span10">
+                <div class="btn-toolbar">
+                  <div class="btn-group">
+                    <a class="btn bunkerbutton active" href="#"><img src="/content/img/minus.gif" height="30" width="30" /></a>
+                    <a class="btn bunkerbutton" href="#"><img src="/content/img/plus.gif" height="30" width="30" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span4 offset2">
+                <button class="btn btn-large btn-primary">Save</button>
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".scorebutton").click(function () {
+                $(".scorebutton").removeClass("active");
+                $(this).addClass("active");
+                return false;
+            });
+
+            $(".puttsbutton").click(function () {
+                $(".puttsbutton").removeClass("active");
+                $(this).addClass("active");
+                return false;
+            });
+
+            $(".penaltybutton").click(function () {
+                $(".penaltybutton").removeClass("active");
+                $(this).addClass("active");
+                return false;
+            });
+
+            $(".drivebutton").click(function () {
+                $(".drivebutton").removeClass("active");
+                $(this).addClass("active");
+                return false;
+            });
+
+            $(".bunkerbutton").click(function () {
+                $(".bunkerbutton").removeClass("active");
+                $(this).addClass("active");
+                return false;
+            });
+
+        });
+    </script>   
+</body>
+</html>   
