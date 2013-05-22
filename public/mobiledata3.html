@@ -116,39 +116,39 @@
     
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function (event) {
 
-            $(".scorebutton").click(function () {
-                $(".scorebutton").removeClass("active");
-                $(this).addClass("active");
-                return false;
+            $(".scorebutton").click(function (event) {
+                event.preventDefault();
+                highlight(this, ".scorebutton");
             });
 
-            $(".puttsbutton").click(function () {
-                $(".puttsbutton").removeClass("active");
-                $(this).addClass("active");
-                return false;
+            $(".puttsbutton").click(function (event) {
+                event.preventDefault();
+               highlight(this, ".puttsbutton");
             });
 
-            $(".penaltybutton").click(function () {
-                $(".penaltybutton").removeClass("active");
-                $(this).addClass("active");
-                return false;
+            $(".penaltybutton").click(function (event) {
+                event.preventDefault();
+                highlight(this, ".penaltybutton");
             });
 
-            $(".drivebutton").click(function () {
-                $(".drivebutton").removeClass("active");
-                $(this).addClass("active");
-                return false;
+            $(".drivebutton").click(function (event) {
+                event.preventDefault();
+                highlight(this, ".drivebutton");
             });
 
-            $(".bunkerbutton").click(function () {
-                $(".bunkerbutton").removeClass("active");
-                $(this).addClass("active");
-                return false;
+            $(".bunkerbutton").click(function (event) {
+                event.preventDefault();
+                highlight(this, ".bunkerbutton");
             });
 
         });
+
+        highlight = function (e, cls) {
+            $(cls).removeClass("active");
+            $(e).addClass("active");
+        }
     </script>   
 </body>
 </html>   
